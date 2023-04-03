@@ -1,0 +1,16 @@
+{
+  "id": "chatix",
+  "version": "0.0.1",
+  "schemaVersion": 1,
+  "name": "Chatix",
+  "authors": ["Lexize"],
+  "description": "Server-side mod that can make your chat pretty",
+  "entrypoints": {
+    "server": [
+      "org.lexize.chatix.Chatix"
+    ]
+  },
+  "mixins": [
+    "chatix.mixin.json"
+  ]
+}
