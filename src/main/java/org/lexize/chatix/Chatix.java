@@ -48,7 +48,7 @@ public class Chatix implements DedicatedServerModInitializer {
         for (int i = 0; i < loadedGroupNames.length; i++) {
             loadedGroupNames[i] = loadedChatGroups.get(i).name;
         }
-        LOGGER.info("Loaded chat groups: %s".formatted(String.join(" ,", loadedGroupNames)));
+        LOGGER.info("Loaded chat groups: %s".formatted(String.join(", ", loadedGroupNames)));
     }
 
     public static Chatix getInstance() {

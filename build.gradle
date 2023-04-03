@@ -29,6 +29,8 @@ dependencies {
     include(modImplementation(fabricApi.module("fabric-lifecycle-events-v1", project.fabric_api)))
     include(modImplementation('me.lucko:fabric-permissions-api:0.2-SNAPSHOT'))
     include(implementation("org.yaml:snakeyaml:2.0"))
+    include(modImplementation("net.kyori:adventure-text-minimessage:4.13.0"))
+    modImplementation include("net.kyori:adventure-platform-fabric:5.8.0")
 }
 
 test {

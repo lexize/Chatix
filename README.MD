@@ -9,9 +9,8 @@ global: # Group name
   # Default value = ""
   prefix: "!" # Prefix for this group
   # Default value = -1
-  distance: -1 # On what distance players can hear 
-    # other players in this group.
-    # If distance > 0 everyone in radius of distance will see your message
+  distance: -1
+    # If distance > 0 everyone in radius of `distance` will see your message
     # If distance = 0 everyone in world will see your message
     # If distance < 0 everyone on server will see your message
     # Default value = 0
@@ -22,7 +21,7 @@ global: # Group name
   # Default value = JSON
   deserializer: JSON # Deserializer used to create component
     # out of output
-    # Right now there is only one deserializer: JSON
+    # Available deserializers: JSON, MINIMESSAGE
   # Required
   output: '{"extra":[{"color":"gold","text":"[G]"},{"text":" ${player_name}: ${message}"}],"text":""}'
     # This field don't have default value, and required.
