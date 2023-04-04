@@ -1,18 +1,14 @@
-package org.lexize.chatix;
+package org.lexize.chatix.groups;
 
 
+import org.lexize.chatix.ChatixDeserializer;
 import org.yaml.snakeyaml.nodes.MappingNode;
 import org.yaml.snakeyaml.nodes.NodeTuple;
 import org.yaml.snakeyaml.nodes.ScalarNode;
 
-public class ChatixChatGroup {
-    public String name;
-    public float distance = -1;
+public class ChatixChatGroup extends ChatixGroup {
     public String prefix = "";
-    public String output;
     public int priority = 0;
-    public boolean defaultPermission = true;
-    public ChatixDeserializer deserializer = ChatixDeserializer.JSON;
     public ChatixChatGroup() {}
     public static ChatixChatGroup fromNode(String groupName, MappingNode node) {
         ChatixChatGroup group = new ChatixChatGroup();
